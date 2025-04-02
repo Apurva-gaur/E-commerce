@@ -6,10 +6,7 @@ import { dataContext } from './context';
 
 function NavBar() {
   const [seachKeyword, setseachKeyword] = useState();
-  const [filterProductbyCatagoray, setfiterProductbyCatagory] = useState(null);
-  const { data } = useContext(dataContext);
   const { updateData } = useContext(dataContext);
-  const [prev, setprev] = useState(items);
 
   function onChangeHandler(e) {
     setseachKeyword(e.target.value);
